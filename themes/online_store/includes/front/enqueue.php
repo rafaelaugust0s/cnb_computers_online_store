@@ -12,13 +12,13 @@ function cnb_enqueue(){
     //wp_enqueue_style('cnb_bootstrap');
     wp_enqueue_style('cnb_styles');
 
-
-    wp_register_script('cnb_core_theme',$uri .'/assets/startbootstrap-shop/js/scripts.js', [], false, true);
     wp_register_script('cnb_bootstrap_core_js','https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js');
+    wp_register_script('cnb_core_theme',$uri . '/assets/startbootstrap-shop/js/scripts.js', [], false, true);
+  
 
-
-    wp_enqueue_style('cnb_core_theme');
-    wp_enqueue_style('cnb_bootstrap_core_js');
+    wp_enqueue_script('cnb_bootstrap_core_js');
+    wp_enqueue_script('cnb_core_theme');
+    
 
 
 }
